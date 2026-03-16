@@ -20,8 +20,8 @@ html {
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: var(--dark-color);
-  background-color: var(--light-color);
+  color: white;
+  background-color: transparent;
 }
 
 /* Utility Classes */
@@ -239,11 +239,11 @@ body {
 
 .section {
   padding: 100px 0;
-  background: var(--white);
+  background: transparent;
 }
 
 .section:nth-child(even) {
-  background: var(--light-color);
+  background: transparent;
 }
 
 /* ABOUT SECTION BACKGROUND */
@@ -341,7 +341,8 @@ body {
 }
 
 .project-card {
-  background: var(--white);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -369,11 +370,11 @@ body {
 .project-info h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: var(--dark-color);
+  color: white;
 }
 
 .project-info p {
-  color: var(--gray);
+  color: white;
   margin-bottom: 15px;
   line-height: 1.6;
 }
@@ -387,15 +388,15 @@ body {
 
 .project-tech span {
   padding: 5px 12px;
-  background: var(--light-color);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 15px;
   font-size: 0.8rem;
-  color: var(--primary-color);
+  color: white;
   font-weight: 500;
 }
 
 .project-link {
-  color: var(--primary-color);
+  color: white;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
@@ -613,23 +614,14 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: -1;
 }
-#about {
-  background: #000000;
-  color: white;
-}
-#education {
-  background: black;
-  color: white;
-}
-#projects {
-  background: black;
-  color: white;
-}
+#about,
+#education,
+#projects,
 #contact {
-  background: black;
+  background: transparent;
   color: white;
 }
 #contact h2,
@@ -640,4 +632,7 @@ body {
 
 #contact p {
   color: #d1d5db;
+}
+.container {
+  background: transparent;
 }
