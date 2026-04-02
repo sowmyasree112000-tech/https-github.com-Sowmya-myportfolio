@@ -31,7 +31,7 @@
       <!-- Home Section -->
       <section id="home" class="hero">
         <div class="hero-content">
-          <h1>Hello, I'm <span class="highlight">SOWMYA👩‍💻🩵</span></h1>
+          <h1>Hello, This is <span class="highlight">SOWMYA👩‍💻🩵</span></h1>
           <p class="tagline">Web Developer | Designer | Creative Thinker</p>
           <div class="hero-buttons">
             <a href="#about" class="btn btn-primary">About Me</a>
@@ -98,7 +98,7 @@
               <div class="timeline-content">
                 <h3>Bachelor's Degree</h3>
                 <p class="timeline-place">St.ann's college for women</p>
-                <p class="timeline-date">2021 - 2023</p>
+                <p class="timeline-date">2023 - 2026</p>
                 <p>Degree in Computer Science with minor Statistics.</p>
               </div>
             </div>
@@ -108,7 +108,7 @@
               <div class="timeline-content">
                 <h3>Intermediate</h3>
                 <p class="timeline-place">St.ann's college for women</p>
-                <p class="timeline-date">2023 - 2026</p>
+                <p class="timeline-date">2021 - 2023</p>
                 <p>
                   Science stream with focus on Mathematics and
                   Physics,Chemistry.
@@ -278,6 +278,14 @@
         points: 10,
         maxDistance: 20,
         spacing: 15,
+      });
+    </script>
+    <script>
+      const hamburger = document.getElementsByClassName("hamburger");
+      const navLinks = document.getElementsByClassName("nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
       });
     </script>
   </body>

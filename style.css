@@ -108,7 +108,7 @@ body {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: var(--dark-color);
+  background: white;
   transition: all 0.3s ease;
 }
 /* Hero Section */
@@ -556,6 +556,7 @@ body {
 
   .hamburger {
     display: flex;
+    color: white;
   }
 
   .hero-content h1 {
